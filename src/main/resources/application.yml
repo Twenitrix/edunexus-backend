@@ -1,9 +1,9 @@
 server:
-  port: 8081
+  port: ${PORT:8080}
 
 spring:
   datasource:
-    url: jdbc:h2:file:./edunexusdb
+    url: jdbc:h2:mem:edunexusdb
     driverClassName: org.h2.Driver
     username: sa
     password: password
